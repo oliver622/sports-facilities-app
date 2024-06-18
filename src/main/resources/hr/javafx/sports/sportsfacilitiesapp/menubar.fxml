@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="600.0" stylesheets="@../../../../stylesheets/menubar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.sports.sportsfacilitiesapp.MenubarController">
+   <children>
+      <MenuBar styleClass="menu-bar" HBox.hgrow="ALWAYS">
+         <menus>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Ski Resort">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showSkiResortSearch" styleClass="menu-item" text="Reserve" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddSkiResort" styleClass="menu-item" text="Add" />
+                  <MenuItem mnemonicParsing="false" onAction="#showEditSkiResort" text="Edit / Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Pool">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showPoolSearch" styleClass="menu-item" text="Reserve" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddPool" styleClass="menu-item" text="Add" />
+                  <MenuItem mnemonicParsing="false" onAction="#showEditPool" text="Edit / Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Skating Ring">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showSkatingRingSearch" styleClass="menu-item" text="Reserve" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddSkatingRing" styleClass="menu-item" text="Add" />
+                  <MenuItem mnemonicParsing="false" onAction="#showEditSkatingRing" text="Edit / Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Stadium">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showStadiumSearch" styleClass="menu-item" text="Reserve" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddStadium" styleClass="menu-item" text="Add" />
+                  <MenuItem mnemonicParsing="false" onAction="#showEditStadium" text="Edit / Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Changelog">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showChangelog" styleClass="menu-item" text="Show" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="button" mnemonicParsing="false" onAction="#showLoginScreen" prefHeight="25.0" prefWidth="57.0" styleClass="button" text="Logout" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
